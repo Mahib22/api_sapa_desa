@@ -2,7 +2,7 @@
 
     include 'connect.php';
 
-    $queryResult=$con->query("SELECT * FROM laporan ORDER BY tgl DESC");
+    $queryResult=$con->query("SELECT * FROM laporan WHERE tanggapan IS NOT NULL ORDER BY tgl DESC");
 
     $result=array();
 
